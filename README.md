@@ -70,6 +70,9 @@ understand the pricing dynamics of a new market.
 
 11) #### Model Evaluation:
       Evaluated the model's performance on the testing set using various metrics:
-          * Mean Squared Error (MSE): The average squared difference between the predicted prices and the actual prices. A lower MSE indicates better model performance.
-          * R-squared (R²) Score: The proportion of variance in the target variable that is explained by the model. A higher R² score indicates a better fit to the data.
-          * Cross-Validation RMSE: The average root mean squared error obtained through cross-validation. It gives an estimate of the model's performance on unseen data.
+
+      * Mean Squared Error (MSE): The average squared difference between the predicted prices and the actual prices. A lower MSE indicates better model performance.
+
+      * R-squared (R²) Score: The proportion of variance in the target variable that is explained by the model. A higher R² score indicates a better fit to the data.
+
+      * Cross-Validation RMSE: The average root mean squared error obtained through cross-validation. It gives an estimate of the model's performance on unseen data.
