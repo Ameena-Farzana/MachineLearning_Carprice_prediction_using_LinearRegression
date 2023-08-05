@@ -45,3 +45,31 @@ understand the pricing dynamics of a new market.
 19. citympg: The car's fuel efficiency in miles per gallon (mpg) during city driving.
 20. highwaympg: The car's fuel efficiency in miles per gallon (mpg) during highway driving.
 21. price: The price of the car.
+
+## Steps Performed:
+1) #### Data Loading:
+      Started by loading the car dataset from a CSV file. This dataset contains various features (independent variables) related to cars, such as "drivewheel," "wheelbase," "carlength," etc., and a target variable "price," which represents the price of the car.
+   
+3) #### Preprocessing:
+      We preprocessed the data, which involved handling missing values and converting categorical variables into numerical representations (if needed). Proper data preprocessing ensures that the data is in a suitable format for building the regression model.
+   
+5) #### Feature Selection:
+      From the dataset, we selected the features with positive and negative correlations with the target variable "price." These features were "drivewheel," "wheelbase," "carlength," "carwidth," "curbweight," "cylindernumber," "enginesize," "fuelsystem," "boreratio," and "horsepower" for positive correlation, and "citympg" and "highwaympg" for negative correlation.
+   
+7) #### Feature Scaling:
+      Since the selected features had different scales, we applied Min-Max scaling to bring all the features to a similar scale between 0 and 1. Feature scaling helps prevent certain features from dominating the model due to their larger magnitudes.
+
+8) #### Data Splitting:
+      We split the dataset into training and testing sets. The training set (80% of the data) was used to train the linear regression model, and the testing set (20% of the data) was used to evaluate the model's performance on unseen data.
+
+9) #### Linear Regression Model:
+      We created a linear regression model using the scikit-learn library. Linear regression is a simple and interpretable model that aims to fit a linear relationship between the selected features and the target variable "price."
+
+10) #### Model Training: 
+      The linear regression model was trained on the training data using the fit method. During training, the model learned the coefficients (weights) for each feature, aiming to minimize the mean squared error between the predicted prices and the actual prices.
+
+11) #### Model Evaluation:
+      Evaluated the model's performance on the testing set using various metrics:
+          * Mean Squared Error (MSE): The average squared difference between the predicted prices and the actual prices. A lower MSE indicates better model performance.
+          * R-squared (R²) Score: The proportion of variance in the target variable that is explained by the model. A higher R² score indicates a better fit to the data.
+          * Cross-Validation RMSE: The average root mean squared error obtained through cross-validation. It gives an estimate of the model's performance on unseen data.
